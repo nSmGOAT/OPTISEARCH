@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTISEARCH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>OPTISEARCH</h1>
+        
+        <!-- Champs de texte pour saisir les mots -->
+        <div class="buttons-container">
+            <input type="text" id="title" placeholder="TITRE" required>
+            <input type="text" id="url" placeholder="URL">
+        </div>
+        <div class="buttons-container">
+            <input type="text" id="text" placeholder="TEXTE">
+            <input type="text" id="keywords" placeholder="Mot-clé">
+        </div>
+
+        <!-- Sélection du type de fichier -->
+        <div class="buttons-container">
+            <select id="fileType">
+                <option value="">Choisir un type de fichier</option>
+                <option value="pdf">PDF</option>
+                <option value="mp4">MP4</option>
+                <option value="mp3">MP3</option>
+                <option value="txt">TXT</option>
+                <option value="doc">DOC</option>
+                <option value="docx">DOCX</option>
+                <option value="ppt">PPT</option>
+                <option value="pptx">PPTX</option>
+                <option value="xls">XLS</option>
+                <option value="xlsx">XLSX</option>
+                <option value="jpg">JPG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="png">PNG</option>
+                <option value="gif">GIF</option>
+                <option value="bmp">BMP</option>
+                <option value="svg">SVG</option>
+                <option value="zip">ZIP</option>
+                <option value="rar">RAR</option>
+                <option value="tar">TAR</option>
+                <option value="7z">7Z</option>
+                <option value="exe">EXE</option>
+                <option value="iso">ISO</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+                <option value="json">JSON</option>
+                <option value="csv">CSV</option>
+                <option value="xml">XML</option>
+                <option value="sql">SQL</option>
+                <option value="epub">EPUB</option>
+                <option value="mobi">MOBI</option>
+                <option value="mpg">MPG</option>
+                <option value="avi">AVI</option>
+                <option value="mov">MOV</option>
+                <option value="wmv">WMV</option>
+                <option value="flv">FLV</option>
+                <option value="3gp">3GP</option>
+                <option value="webm">WEBM</option>
+            </select>
+        </div>
+
+        <!-- Case à cocher pour activer la recherche sur le Deep Web -->
+        <div class="deepweb-container">
+            <input type="checkbox" id="deepWebSearch" />
+            <label for="deepWebSearch">Rechercher sur le Deep Web</label>
+        </div>
+
+        <!-- Bouton de recherche -->
+        <button id="searchButton">Faire la recherche</button>
+        
+    </div>
+    
+    
+    <script src="script.js"></script>  <!-- Lien vers le fichier JS -->
+
+</body>
+</html>
